@@ -1,0 +1,228 @@
+/*Mixins*/
+/**/
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #F9F6F0;
+  overflow-x: hidden;
+}
+
+.row {
+  border-width: 20px;
+}
+
+.wholePage {
+  height: 100vh;
+  margin: 5vh 0vw 0vh 0vw;
+  align-content: center;
+  padding: 0;
+}
+
+.pattern {
+  background-image: url("/assets/background.jpg");
+  height: 30vh;
+  width: 100%;
+  transform: translateY(30vh);
+  opacity: 40%;
+}
+
+.headShot {
+  position: relative;
+  height: 60vh;
+  width: auto;
+  transform: translateY(-20vh);
+}
+
+.adjustedTitleText {
+  position: relative;
+  top: 20%;
+  text-align: left;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #312f2c;
+}
+.adjustedTitleText h2 {
+  font-size: 9vw;
+}
+.adjustedTitleText .focusText {
+  font-size: 15vw;
+  font-weight: 900;
+  font-style: italic;
+}
+.adjustedTitleText .focusText .name {
+  width: -moz-fit-content;
+  width: fit-content;
+  background-image: linear-gradient(to bottom, transparent 50%, #e3c5ac 50%);
+}
+
+.titleText {
+  position: relative;
+  top: 20%;
+  text-align: left;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #312f2c;
+}
+.titleText h2 {
+  font-size: 2.5vw;
+}
+.titleText .focusText {
+  font-size: 6vw;
+  font-weight: 900;
+  font-style: italic;
+}
+.titleText .focusText .name {
+  width: -moz-fit-content;
+  width: fit-content;
+  background-image: linear-gradient(to bottom, transparent 50%, #e3c5ac 50%);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.pageNav {
+  background-color: #F9F6F0;
+}
+
+.navbar-brand {
+  height: 8vh;
+  width: auto;
+}
+
+.panel1 {
+  height: 100vh;
+  width: 100vw;
+  max-height: 100%;
+  max-width: 100%;
+}
+.panel1 * {
+  color: #312f2c;
+}
+
+.panel2 {
+  height: 100vh;
+  width: 100vw;
+  max-height: 100%;
+  max-width: 100%;
+}
+.panel2 ul {
+  list-style: none;
+}
+.panel2 li a {
+  text-decoration: none;
+  color: rgba(49, 47, 44, 0.555);
+}
+.panel2 li a .linkText {
+  font-size: 6vw;
+  font-weight: 600;
+  font-style: oblique;
+}
+.panel2 li a:hover {
+  text-decoration: underline;
+  color: #312f2c;
+}
+.panel2 li a:hover .focusText {
+  font-weight: 900;
+}
+
+.listContainer {
+  margin-top: 10vh;
+}
+
+.card {
+  height: auto;
+  width: 40vw;
+  background-color: #F9F6F0;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(73, 62, 45, 0.2), 0 6px 20px 0 rgba(73, 62, 45, 0.19);
+}
+
+.aboutImg {
+  align-content: center;
+  background-color: #F9F6F0;
+  margin-left: 8vw;
+  width: 32vw;
+}
+
+.imgContainer {
+  background-color: red;
+}
+
+footer {
+  background-color: #312f2c;
+  color: #F9F6F0;
+}
+
+.subTitle {
+  text-align: center;
+  font-style: italic;
+}
+
+.aboutMeText {
+  text-indent: 10%;
+}
+
+h6 a {
+  color: #F9F6F0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.icons a {
+  color: #F9F6F0;
+  text-decoration: none;
+}
+
+.accordion .accordion-item {
+  background-color: transparent;
+  border: none;
+}
+.accordion .accordion-item img {
+  width: 30vw;
+}
+.accordion .accordion-header button {
+  position: relative;
+  margin-top: 15%;
+  margin-bottom: 15%;
+  font-size: larger;
+  font-weight: bolder;
+  font-style: italic;
+}
+.accordion button {
+  background-color: transparent;
+}
+
+#sectionHeader {
+  font-size: larger;
+  margin-left: 32.5vw;
+}
+
+#headerDescription {
+  margin-top: 15vh;
+}
+
+.contactHeader {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  border: none;
+}
+
+.contactCard {
+  margin-top: 12vh;
+  text-align: center;
+  margin-bottom: 10%;
+}
+.contactCard .card {
+  align-self: center;
+  margin: 0 auto;
+  height: 70vh;
+  box-shadow: none;
+}
+.contactCard .card img {
+  height: 30vh;
+  width: auto;
+}
+.contactCard .card .btn {
+  background-color: #e3c5ac;
+}/*# sourceMappingURL=index.css.map */

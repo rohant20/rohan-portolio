@@ -1,0 +1,267 @@
+@import "variables";
+
+/*Mixins*/
+@mixin panel-setup {
+    height: 100vh;
+    width: 100vw;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/**/
+
+
+body {
+    font-family: $headerFont;
+    background-color: $bgCol;
+    overflow-x: hidden;
+}
+
+.row {
+    border-width: 20px;
+}
+
+.wholePage {
+    height: 100vh;
+    margin: 5vh 0vw 0vh 0vw;
+    align-content: center;
+    padding: 0;
+}
+
+.pattern {
+    background-image: url("/assets/background.jpg");
+    //box-shadow: inset 20px 20px 20px 50px $bgCol;
+    height: 30vh;
+    width: 100%;
+    transform: translateY(30vh);
+    opacity: 40%;
+}
+
+.headShot {
+    position: relative;
+    height: 60vh;
+    width: auto;
+    transform: translateY(-20vh);
+}
+
+
+.adjustedTitleText {
+    position: relative;
+    top: 20%;
+    text-align: left;
+    font-family: $headerFont;
+    color: $compCol;
+
+    h2 {
+        font-size: 9vw;
+    }
+
+    .focusText {
+        font-size: 15vw;
+        font-weight: 900;
+        font-style: italic;
+
+        .name {
+            width: fit-content;
+            background-image: linear-gradient(to bottom, transparent 50%, $lightBrown 50%);
+        }
+    }
+}
+
+.titleText {
+    position: relative;
+    top: 20%;
+    text-align: left;
+    font-family: $headerFont;
+    color: $compCol;
+
+    h2 {
+        font-size: 2.5vw;
+    }
+
+    .focusText {
+        font-size: 6vw;
+        font-weight: 900;
+        font-style: italic;
+
+        .name {
+            width: fit-content;
+            background-image: linear-gradient(to bottom, transparent 50%, $lightBrown 50%);
+        }
+    }
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.pageNav {
+    background-color: $bgCol;
+}
+
+.navbar-brand {
+    height: 8vh;
+    width: auto;
+}
+
+.panel1 {
+    @include panel-setup;
+
+    * {
+        color: $compCol;
+    }
+}
+
+.panel2 {
+    @include panel-setup;
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        a {
+            text-decoration: none;
+            color: rgba($compCol, 0.555);
+
+            .linkText {
+                font-size: 6vw;
+                font-weight: 600;
+                font-style: oblique;
+            }
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: $compCol;
+
+            .focusText {
+                font-weight: 900;
+            }
+        }
+    }
+}
+
+.listContainer {
+    margin-top: 10vh;
+}
+
+.card {
+    height: auto;
+    width: 40vw;
+    background-color: $bgCol;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba($darkerBrown, 0.2), 0 6px 20px 0 rgba($darkerBrown, 0.19);
+}
+
+.aboutImg {
+    align-content: center;
+    background-color: $bgCol;
+    margin-left: 8vw;
+    width: 32vw;
+}
+
+
+.imgContainer {
+    background-color: red;
+}
+
+footer {
+    background-color: $compCol;
+    color: $bgCol;
+}
+
+.subTitle {
+    text-align: center;
+    font-style: italic;
+}
+
+.aboutMeText {
+    text-indent: 10%;
+}
+
+h6 {
+    a {
+        color: $bgCol;
+        font-family: $headerFont
+    }
+}
+
+.icons {
+    a {
+        color: $bgCol;
+        text-decoration: none;
+    }
+}
+
+.accordion {
+
+    .accordion-item {
+        background-color: transparent;
+        border: none;
+
+        img {
+            width: 30vw;
+        }
+    }
+
+    .accordion-header {
+        button {
+            position: relative;
+            margin-top: 15%;
+            margin-bottom: 15%;
+            font-size: larger;
+            font-weight: bolder;
+            font-style: italic;
+        }
+    }
+
+
+    button {
+        background-color: transparent;
+    }
+}
+
+#sectionHeader {
+    font-size: larger;
+    margin-left: 32.5vw;
+}
+
+#headerDescription {
+    margin-top: 15vh;
+}
+
+.contactHeader {
+    font-size: 5rem;
+    text-align: center;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+    border: none;
+}
+
+.contactCard {
+    margin-top: 12vh;
+    text-align: center;
+    margin-bottom: 10%;
+
+
+    .card {
+        align-self: center;
+        margin: 0 auto;
+        height: 70vh;
+        box-shadow: none;
+
+        img {
+            height: 30vh;
+            width: auto;
+        }
+
+        .btn {
+            background-color: $lightBrown;
+        }
+    }
+}
+
+//JavaScript Added Classes
