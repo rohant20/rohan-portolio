@@ -25,6 +25,7 @@ body {
   background-image: url("/assets/background.jpg");
   height: 40vh;
   width: 100%;
+  transform: translateY(2vh);
   opacity: 30%;
 }
 
@@ -38,7 +39,7 @@ body {
 .adjustedHeadShot {
   position: relative;
   height: 35vh;
-  transform: translateY(-37vh);
+  transform: translateY(-35vh);
 }
 
 .adjustedTitleText {
@@ -46,10 +47,10 @@ body {
   text-align: left;
   font-family: "Roboto Condensed", sans-serif;
   color: #312f2c;
-  top: 20%;
+  top: 5%;
 }
 .adjustedTitleText h2 {
-  font-size: 9vw;
+  font-size: 8vw;
 }
 .adjustedTitleText .focusText {
   font-size: 15vw;
@@ -245,7 +246,7 @@ h6 a {
 #greeting {
   text-align: center;
   padding: 5% 0 5% 0;
-  font-size: 10vh;
+  font-size: 10vw;
   font-weight: bolder;
   font-style: italic;
 }/*# sourceMappingURL=index.css.map */
