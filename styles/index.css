@@ -6,10 +6,6 @@ body {
   overflow-x: hidden;
 }
 
-.row {
-  border-width: 20px;
-}
-
 .wholePage {
   height: 100vh;
   margin: 5vh 0vw 0vh 0vw;
@@ -25,6 +21,13 @@ body {
   opacity: 40%;
 }
 
+.adjustedPattern {
+  background-image: url("/assets/background.jpg");
+  height: 40vh;
+  width: 100%;
+  opacity: 30%;
+}
+
 .headShot {
   position: relative;
   height: 60vh;
@@ -32,12 +35,18 @@ body {
   transform: translateY(-20vh);
 }
 
+.adjustedHeadShot {
+  position: relative;
+  height: 35vh;
+  transform: translateY(-37vh);
+}
+
 .adjustedTitleText {
   position: relative;
-  top: 20%;
   text-align: left;
   font-family: "Roboto Condensed", sans-serif;
   color: #312f2c;
+  top: 20%;
 }
 .adjustedTitleText h2 {
   font-size: 9vw;
@@ -129,7 +138,7 @@ body::-webkit-scrollbar {
 
 .card {
   height: auto;
-  width: 40vw;
+  width: 80%;
   background-color: #F9F6F0;
   border: none;
   box-shadow: 0 4px 8px 0 rgba(73, 62, 45, 0.2), 0 6px 20px 0 rgba(73, 62, 45, 0.19);
@@ -137,13 +146,19 @@ body::-webkit-scrollbar {
 
 .aboutImg {
   align-content: center;
-  background-color: #F9F6F0;
   margin-left: 8vw;
   width: 32vw;
 }
 
-.imgContainer {
-  background-color: red;
+.adjustedAboutImg {
+  align-content: center;
+  margin-left: 20%;
+  width: 50vw;
+}
+
+.adjustedCol {
+  margin-top: 0;
+  font-size: 2vh;
 }
 
 footer {
@@ -225,4 +240,12 @@ h6 a {
 }
 .contactCard .card .btn {
   background-color: #e3c5ac;
+}
+
+#greeting {
+  text-align: center;
+  padding: 5% 0 5% 0;
+  font-size: 10vh;
+  font-weight: bolder;
+  font-style: italic;
 }/*# sourceMappingURL=index.css.map */
