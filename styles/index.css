@@ -7,8 +7,8 @@ body {
 }
 
 .wholePage {
-  height: 100vh;
-  margin: 5vh 0vw 0vh 0vw;
+  height: max(auto, 100vh);
+  margin: 10vh 0vw 10vh 0vw;
   align-content: center;
   padding: 0;
 }
@@ -100,7 +100,7 @@ body::-webkit-scrollbar {
 }
 
 .panel1 {
-  height: 100vh;
+  height: max(100vh, max);
   width: 100vw;
   max-height: 100%;
   max-width: 100%;
@@ -110,10 +110,11 @@ body::-webkit-scrollbar {
 }
 
 .panel2 {
-  height: 100vh;
+  height: max(100vh, max);
   width: 100vw;
   max-height: 100%;
   max-width: 100%;
+  height: auto;
 }
 .panel2 ul {
   list-style: none;
@@ -123,7 +124,7 @@ body::-webkit-scrollbar {
   color: rgba(49, 47, 44, 0.555);
 }
 .panel2 li a .linkText {
-  font-size: 6vw;
+  font-size: 5rem;
   font-weight: 600;
   font-style: oblique;
 }
@@ -136,7 +137,9 @@ body::-webkit-scrollbar {
 }
 
 .listContainer {
-  margin-top: 10vh;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .card {
@@ -145,6 +148,10 @@ body::-webkit-scrollbar {
   background-color: #F9F6F0;
   border: none;
   box-shadow: 0 4px 8px 0 rgba(73, 62, 45, 0.2), 0 6px 20px 0 rgba(73, 62, 45, 0.19);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
 }
 
 .aboutImg {
@@ -162,6 +169,10 @@ body::-webkit-scrollbar {
 .adjustedCol {
   margin-top: 0;
   font-size: 2vh;
+}
+
+#cellNum {
+  color: #312f2c;
 }
 
 footer {
@@ -193,7 +204,7 @@ h6 a {
   border: none;
 }
 .accordion .accordion-item img {
-  width: 30vw;
+  width: max(30vw, 40vh);
 }
 .accordion .accordion-header button {
   position: relative;
@@ -213,7 +224,8 @@ h6 a {
 }
 
 #headerDescription {
-  margin-top: 15vh;
+  margin-top: 20vh;
+  margin-bottom: 35vh;
 }
 
 .contactHeader {
