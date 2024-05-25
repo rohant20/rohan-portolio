@@ -25,7 +25,7 @@ let cardText = [
 ]
 
 let cardImgSrc = [
-    "assets/Onstage.JPG",
+    "assets/onStage.JPG",
     "assets/projectCover.JPG",
     "assets/contactCover.jpg"
 ]
